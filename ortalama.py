@@ -1,17 +1,8 @@
-vize = int(input("Vize notunuzu giriniz: "))
-final = int(input("Final notunuzu giriniz: "))
-ortalama = (vize * 0.4) + (final * 0.6) 
+users = []
 
-# eğer final 40'dan küçükse kullanıcı kaldı
-# eğer ortalama 50'den küçükse kullanıcı kaldı
-# eğer vize finalin 2 katı ise kullanıcı kaldı
-# bunun dışındaki tüm durumlarda kullanıcı geçti yazdırmak istiyoruz.
+for i in range(10):
+    names = input("Enter Name:")
+    surnames = input("Enter Surname:")
+    users.append((names,surnames))
 
-if final < 40:
-    print("Fail")
-elif ortalama < 50:
-    print("Fail")
-elif vize <= final * 2:
-    print("Fail")
-else:
-    print("Pass")
+print ("List of the names and surnames of user",users)
